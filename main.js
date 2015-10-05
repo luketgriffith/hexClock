@@ -17,23 +17,10 @@ var color= (timeInt>99999) ? ('#'+timeInt) : ('#'+'0'+timeInt);
 console.log(color);
 body.css('background-color',  color);
 
-// var hourNum = Number(hours);
-// var minuteNum= Number(minutes);
-// var secondsNum= Number()
-// console.log(hourNum);
+
 return time;
 }
 tickTock();
 setInterval('tickTock()', 1000);
 
 
-// var background= function(){
-  
-//   var clock = $('.clock');
-//   var clockVal = parseInt(clock.text, 10);
-//   console.log(clockVal);
-
-//   // body.css({'background-color':''})
-// }
-// background();
-// // setInterval('background()', 1000);
