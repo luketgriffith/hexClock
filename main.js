@@ -24,3 +24,30 @@ tickTock();
 setInterval('tickTock()', 1000);
 
 
+/* True hex clock code (hard mode)
+
+
+function formatTime (num) {
+  var hex = num.toString(16);
+  hex = hex.length === 2 ? hex : "0" + hex;
+  return hex.toUpperCase();
+}
+
+
+setInterval(function() {
+
+  var now = new Date();
+
+  var hours = formatTime(now.getHours());
+  var minutes = formatTime(now.getMinutes());
+  var seconds = formatTime(now.getSeconds());
+
+  var timeStr =  '#' + hours + minutes + seconds;
+
+  // $('h1').text(timeStr)
+  // $('body').css('background-color', timeStr);
+
+  document.querySelector('h1').textContent = (timeStr);
+  document.body.style.backgroundColor = timeStr;
+
+}, 1000); */
